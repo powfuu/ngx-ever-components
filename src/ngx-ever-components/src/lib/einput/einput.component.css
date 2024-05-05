@@ -1,0 +1,22 @@
+.search-container {
+  position: relative;
+  display: inline-block;
+}
+
+.e-input {
+  resize: none;
+  outline: none;
+  border-radius: 4px;
+  border-color: rgb(201, 201, 201);
+  color: #777;
+  box-shadow: rgba(149, 157, 165, 0.1) 0px 8px 24px;
+  padding: 7px 12px 7px 12px; /* Agregado el padding para dejar espacio al ícono */
+  height: 18px;
+  width: 240px;
+  transition: 0.3s all;
+}
+
+.e-input:hover,
+.e-input:focus {
+  border-color: #000;
+}

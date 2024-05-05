@@ -1,0 +1,19 @@
+.card {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  width: max-content;
+  height: max-content;
+  padding: 12px 20px;
+  border-radius: 6px;
+  border: 1px solid rgb(245, 245, 245);
+}
+
+.card ng-content {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  line-height: 25px;
+}
+
+.card * {
+  margin: 0px;
+}

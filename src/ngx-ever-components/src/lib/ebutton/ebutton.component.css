@@ -1,0 +1,42 @@
+button {
+  outline: none;
+  border: none;
+  border-radius: 6px;
+  padding: 11px 15px;
+  cursor: pointer;
+  font-size: 15px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.primary {
+  background: #000;
+  color: #fff;
+}
+.secondary {
+  background: #e5e5e5;
+  color: #666;
+}
+.third {
+  color: #000;
+  background: #fff;
+  border: 1px solid #000;
+}
+button div {
+  display: flex;
+  justify-content: space-between;
+  gap: 5px;
+}
+.s {
+  font-size: 11px;
+}
+.sx {
+  font-size: 13.5px;
+}
+.md {
+  font-size: 15px;
+}
+.xl {
+  font-size: 18px;
+}
+.xxl {
+  font-size: 22px;
+}

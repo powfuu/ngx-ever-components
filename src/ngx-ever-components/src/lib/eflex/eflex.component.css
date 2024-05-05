@@ -1,0 +1,21 @@
+.eflex {
+  display: flex;
+}
+.row {
+  flex-direction: row;
+}
+.column {
+  flex-direction: column;
+}
+.n {
+  gap: 0px;
+}
+.s {
+  gap: 5px;
+}
+.m {
+  gap: 10px;
+}
+.xl {
+  gap: 15px;
+}

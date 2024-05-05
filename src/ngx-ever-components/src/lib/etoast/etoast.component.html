@@ -1,0 +1,6 @@
+<div class="toast-container" [class.show]="showContainer">
+    <div
+        [ngClass]="{'toast-warning': type === 'warning', 'toast-success': type === 'success', 'toast-alert': type === 'alert', 'toast-error': type === 'error'}">
+        <span>{{ text }}</span>
+    </div>
+</div>

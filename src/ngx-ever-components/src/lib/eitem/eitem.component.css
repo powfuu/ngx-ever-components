@@ -1,0 +1,7 @@
+.e-item {
+  border-bottom: 1px solid rgb(220, 220, 220);
+  padding-bottom: 8px;
+  padding-left: 2px;
+  padding-right: 2px;
+  width: max-content;
+}
