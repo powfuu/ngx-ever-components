@@ -6,9 +6,10 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./etoast.component.css'],
 })
 export class EtoastComponent {
-  @Input() show = false; // Cambiado a falso por defecto
+  show = false;
   @Input() type = 'alert';
   @Input() text = 'Toast default text';
+  @Input() position = 'bottom-right';
   @Input() duration = 2000; // Duración predeterminada de 3 segundos
   showContainer = false; // Agregar la variable showContainer
 

@@ -36,9 +36,10 @@
   margin-right: -18px;
   border-radius: 8px;
   color: #000;
-  &:hover {
-    background-color: rgba(0, 0, 0, 0.08);
-  }
+}
+
+.modal-content svg:hover {
+  background-color: rgba(0, 0, 0, 0.08);
 }
 
 .modal-content h1 {

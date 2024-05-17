@@ -14,4 +14,11 @@ export * from './lib/etooltip/etooltip.component';
 export * from './lib/etoast/etoast.component';
 export * from './lib/eloading/eloading.component';
 export * from './lib/emodal/emodal.component';
+
+export * from './lib/dialog/dialog.component';
+export * from './lib/dropdown/dropdown.component';
+export * from './lib/item-navigator/item-navigator.component';
+export * from './lib/sidesheet/sidesheet.component';
+export * from './lib/version/version.component';
+
 export * from './lib/ngx-ever-components.module';

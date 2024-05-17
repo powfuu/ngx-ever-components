@@ -1,0 +1,57 @@
+.contenido {
+  margin-top: 12px;
+}
+
+.sidesheet {
+  position: fixed;
+  height: 100vh;
+  padding: 12px 14px;
+  background: #fff;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  transition: 0.4s all ease;
+  overflow-y: auto;
+}
+
+.sidesheet.s {
+  width: 205px;
+}
+
+.sidesheet.m {
+  width: 305px;
+}
+
+.sidesheet.xl {
+  width: 405px;
+}
+
+.sidesheet.right {
+  right: 0;
+  transform: translateX(100%);
+}
+
+.sidesheet.left {
+  left: 0;
+  transform: translateX(-100%);
+}
+
+.sidesheet.show {
+  transform: translateX(0);
+}
+
+.sidesheet.right svg {
+  float: left;
+}
+.sidesheet.left svg {
+  float: right;
+}
+svg {
+  width: 23px;
+  height: 23px;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.3s all ease;
+}
+svg:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}

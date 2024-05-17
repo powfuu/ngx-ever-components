@@ -1,0 +1,66 @@
+/* Dropdown container */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown toggle (the element to hover over) */
+.dropdown-toggle {
+  cursor: pointer;
+  padding: 10px;
+  padding-right: 47px;
+  border-radius: 5px;
+  position: relative;
+}
+
+/* Flecha hacia abajo */
+.dropdown-toggle::after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 6px solid black;
+  position: absolute;
+  top: 50%;
+  right: 20px; /* Ajuste para la separación de la flecha */
+  transform: translateY(-50%);
+  transition: transform 0.3s ease;
+}
+
+/* Flecha hacia abajo al pasar el cursor */
+.dropdown-toggle:hover::after {
+  transform: translateY(-50%) rotate(180deg);
+}
+
+/* Dropdown menu (hidden by default) */
+.dropdown-menu {
+  position: absolute;
+  top: calc(100% + 5px);
+  right: 0;
+  width: 100%;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  transform-origin: top;
+  transform: scaleY(0);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* Show the dropdown menu */
+.dropdown-menu.show {
+  opacity: 1;
+  transform: scaleY(1);
+}
+
+/* Dropdown items */
+.dropdown-item {
+  padding: 10px;
+  cursor: pointer;
+  transition: 0.3s all ease;
+  white-space: nowrap;
+}
+
+.dropdown-item:hover {
+  background-color: #f0f0f0;
+}

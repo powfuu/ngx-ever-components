@@ -1,0 +1,10 @@
+<div class="dropdown" (mouseover)="showDropdown = true" (mouseleave)="showDropdown = false">
+    <div class="dropdown-toggle">
+        {{titleDropdown}}
+    </div>
+    <div class="dropdown-menu" [class.show]="showDropdown">
+        <div class="dropdown-item" *ngFor="let item of items" (click)="onItemClick(item)">
+            {{ item }}
+        </div>
+    </div>
+</div>
