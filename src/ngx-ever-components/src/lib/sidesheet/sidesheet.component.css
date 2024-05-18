@@ -10,7 +10,7 @@
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   transition: 0.4s all ease !important;
   overflow-y: auto;
-  z-index: 999;
+  z-index: 9999;
 }
 
 .sidesheet.s {
