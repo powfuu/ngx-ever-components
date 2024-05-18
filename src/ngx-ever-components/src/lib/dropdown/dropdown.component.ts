@@ -11,9 +11,15 @@ export class DropdownComponent {
   @Input() items: string[] = [];
   @Input() clickAction!: (item: string) => void;
 
-  closeDropdown(): void {
-    if (this.showDropdown) {
-      this.showDropdown = false;
+  private isMobile = false;
+
+  constructor() {
+    this.isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+  }
+
+  toggleDropdown(): void {
+    if (this.isMobile) {
+      this.showDropdown = !this.showDropdown;
     }
   }
 
@@ -21,5 +27,6 @@ export class DropdownComponent {
     if (this.clickAction) {
       this.clickAction(item);
     }
+    this.showDropdown = false; // Close dropdown after click
   }
 }
