@@ -1,5 +1,5 @@
-<ng-container *ngIf="(state | async) as show">
-    <div [ngClass]="{'show': show, 's': size === 's', 'm': size === 'm', 'xl': size === 'xl', 'right': position === 'right', 'left': position === 'left' }"
+<ng-container>
+    <div [ngClass]="{'show': state | async, 's': size === 's', 'm': size === 'm', 'xl': size === 'xl', 'right': position === 'right', 'left': position === 'left' }"
         class="sidesheet">
         <svg (click)="closeSideSheet()" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100"
             viewBox="0 0 50 50">
