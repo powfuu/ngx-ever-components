@@ -1,9 +1,9 @@
 p {
-  color: rgb(110, 110, 110);
+  color: rgb(80, 80, 80) !important;
   cursor: pointer;
-  font-size: 15px;
-  font-weight: lighter;
+  font-size: 16px !important;
   user-select: none;
+  font-weight: 400 !important;
   padding: 10px 18px;
   width: max-content;
   border-radius: 5px;
@@ -13,5 +13,4 @@ p:hover {
   color: #000;
   background: rgba(0, 0, 0, 0.05);
   font-weight: bold;
-  scale: 1 !important;
 }
