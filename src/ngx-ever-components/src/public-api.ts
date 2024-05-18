@@ -19,6 +19,5 @@ export * from './lib/dialog/dialog.component';
 export * from './lib/dropdown/dropdown.component';
 export * from './lib/item-navigator/item-navigator.component';
 export * from './lib/sidesheet/sidesheet.component';
-export * from './lib/version/version.component';
 
 export * from './lib/ngx-ever-components.module';

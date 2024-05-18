@@ -1,5 +1,4 @@
-import { Component, EventEmitter, Input, Output } from '@angular/core';
-import { EdropdownClassModel } from './dropdown.model';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'e-dropdown',
@@ -10,9 +9,11 @@ export class DropdownComponent {
   showDropdown = false;
   @Input() titleDropdown = 'Dropdown';
   @Input() items: string[] = [];
-  @Output() itemClicked = new EventEmitter<string>();
+  @Input() clickAction!: (item: string) => void;
 
   onItemClick(item: string) {
-    this.itemClicked.emit(item);
+    if (this.clickAction) {
+      this.clickAction(item);
+    }
   }
 }

@@ -7,12 +7,12 @@ import { BehaviorSubject } from 'rxjs';
   styleUrls: ['./dialog.component.css'],
 })
 export class DialogComponent {
-  @Input() title = 'sdfnasd';
-  @Input() desc = 'sadsd';
+  @Input() title = '';
+  @Input() desc = '';
   @Input() cancelText = '';
   @Input() confirmText = 'Confirmar';
   @Input() confirmAction!: () => void;
-  @Input() state = new BehaviorSubject<boolean>(true);
+  @Input() state = new BehaviorSubject<boolean>(false);
   closeModal() {
     this.state.next(false);
   }
@@ -20,6 +20,7 @@ export class DialogComponent {
   confirmar(): void {
     if (this.confirmAction) {
       this.confirmAction();
+      this.closeModal();
     }
   }
 }

@@ -14,7 +14,6 @@ import { EtoastComponent } from './etoast/etoast.component';
 import { CommonModule } from '@angular/common';
 import { EloadingComponent } from './eloading/eloading.component';
 import { SidesheetComponent } from './sidesheet/sidesheet.component';
-import { VersionComponent } from './version/version.component';
 import { DialogComponent } from './dialog/dialog.component';
 import { ItemNavigatorComponent } from './item-navigator/item-navigator.component';
 import { DropdownComponent } from './dropdown/dropdown.component';
@@ -34,10 +33,13 @@ import { DropdownComponent } from './dropdown/dropdown.component';
     EtoastComponent,
     EloadingComponent,
     SidesheetComponent,
-    VersionComponent,
     DialogComponent,
     ItemNavigatorComponent,
     DropdownComponent,
+    DialogComponent,
+    SidesheetComponent,
+    DropdownComponent,
+    ItemNavigatorComponent,
   ],
   imports: [CommonModule, FormsModule],
   exports: [
@@ -53,6 +55,10 @@ import { DropdownComponent } from './dropdown/dropdown.component';
     EtooltipComponent,
     EtoastComponent,
     EloadingComponent,
+    DialogComponent,
+    SidesheetComponent,
+    DropdownComponent,
+    ItemNavigatorComponent,
   ],
 })
 export class NgxEverComponentsModule {}
